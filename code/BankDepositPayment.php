@@ -50,7 +50,6 @@ class BankDepositPayment extends Payment {
 		global $emmaus_message;
 		
 		return new FieldSet(
-			// retrieve cheque content from the ChequeContent() method on this class
 			new LiteralField("Bankblurb", '<div id="BankDeposit" class="typography">' . "<p>Please note: Your goods will not be dispatched until we receive your payment.</p></div>"),
 			new HiddenField("BankDeposit", "BankDeposit", 0)
 		);
